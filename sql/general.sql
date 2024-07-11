@@ -8,3 +8,8 @@ and So.name --so.name is table name
 like '%{insert search string}%' 
 order by 1 
 
+--MSSQL Show all tables in a database
+SELECT table_name
+FROM INFORMATION_SCHEMA.TABLES
+WHERE table_type = 'BASE TABLE'
+
